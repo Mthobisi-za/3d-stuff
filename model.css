@@ -1,0 +1,16 @@
+.model_view {
+    position: relative;
+    margin-top: -60vh;
+}
+
+model-viewer {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    /* margin-top: -60vh; */
+}
+
+.content {
+    display: none;
+}

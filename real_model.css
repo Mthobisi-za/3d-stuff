@@ -1,0 +1,6 @@
+.model_viewer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 11;
+}
