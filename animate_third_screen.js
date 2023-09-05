@@ -61,7 +61,7 @@ async function animateCube_third_screen() {
 
 
     let fourth = async() => {
-        // addClass('subtitle', 'animate__zoomIn')
+        addClass_third_screen('subtitle', 'animate__zoomIn')
     }
 
     first().then(() => {

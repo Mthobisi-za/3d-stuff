@@ -61,7 +61,7 @@ async function animateCube() {
 
 
     let fourth = async() => {
-        // addClass('subtitle', 'animate__zoomIn')
+        addClass('subtitle', 'animate__zoomIn')
     }
 
     first().then(() => {
