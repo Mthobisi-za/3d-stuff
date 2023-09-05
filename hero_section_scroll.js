@@ -11,14 +11,18 @@ const scrollPercent = () => {
     if (value_devided >= currentScrollLocation) {
         // console.log('first screen');
         animate(1)
+        localStorage.setItem('screen', 1);
     } else if ((value_devided + value_devided) >= value_devided && (value_devided * 2) >= currentScrollLocation) {
         // console.log('second screen');
+        localStorage.setItem('screen', 2);
         animate(2)
     } else if ((value_devided * 3) >= value_devided && (value_devided * 3) >= currentScrollLocation) {
         // console.log('third screen');
+        localStorage.setItem('screen', 3);
         animate(3)
     } else if ((value_devided * 4) >= value_devided && (value_devided * 4) >= currentScrollLocation) {
         // console.log('fourth screen');
+        localStorage.setItem('screen', 4);
         animate(4);
     }
 

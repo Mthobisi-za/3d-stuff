@@ -19,42 +19,45 @@
     <div class="content_sliding_section">
         <div class="first_section pages">
             <div class="hero_section section">
-                <p class="title"><span class="anime_title_one"> STUDENT</span> <br> <span class="anime_title_two">CATEGORY</span>
+                <p class="title achor_first_cube"><span class="anime_title_one"> STUDENT</span> <br> <span class="anime_title_two">CATEGORY</span>
                 </p>
             </div>
             <div class="scroll_section">
-                <p onclick="show_hide_values(1)" class="actions">LEARN MORE</p>
-                <img onclick="show_hide_values(1)" src="./src/Vector.png" alt="" class="scroll actions">
+                <p onclick="animateCube(1)" class="actions">LEARN MORE</p>
+                <img onclick="animateCube(1)" src="./src/Vector.png" alt="" class="scroll actions">
             </div>
             <div class="cube_top">
-                <model-viewer onclick="animateCube(1)" class="model_viewer" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="./models/eye/cube.glb" environment-image="" poster="" shadow-intensity="1"
+                <model-viewer onclick="animateCube(1)" class="model_viewer model_first" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="./models/eye/cube.glb" environment-image="" poster="" shadow-intensity="1"
                     touch-action="pan-y"></model-viewer>
                 <!-- <img onclick="show_hide_values(1)" src="./src/3d-red-rendering-cube-png-clipart-1 1.png" alt="" class="cube actions"> -->
             </div>
         </div>
         <div class="second_section section pages">
             <div class="hero_section section">
-                <h1 class="title">PROFESSIONAL <br> CATEGORY
+                <h1 class="title second_title achor_second_cube">PROFESSIONAL <br> CATEGORY
                 </h1>
             </div>
             <div class="scroll_section">
-                <p class="actions" onclick="show_hide_values(2)">LEARN MORE</p>
-                <img src="./src/Vector.png" alt="" class="scroll actions" onclick="show_hide_values(2)">
+                <p class="actions" onclick="animateCube_second_screen(2)">LEARN MORE</p>
+                <img src="./src/Vector.png" alt="" class="scroll actions" onclick="animateCube_second_screen(2)">
             </div>
             <div class="cube_top">
-                <img src="./src/glossy-spheres-isolated-png 1.png" alt="" class="round_clay actions">
+                <model-viewer onclick="animateCube_second_screen(1)" class="model_viewer model_viewer_second" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="./models/eye/russian.glb" environment-image=""
+                    poster="" shadow-intensity="1" touch-action="pan-y"></model-viewer>
+                <!-- <img onclick="show_hide_values(1)" src="./src/3d-red-rendering-cube-png-clipart-1 1.png" alt="" class="cube actions"> -->
             </div>
         </div>
         <div class="third_section section pages">
             <div class="hero_section section">
-                <h1 class="title">MORE <br> ENTRIES</h1>
+                <h1 class="title third_title achor_third_cube">MORE <br> ENTRIES</h1>
             </div>
             <div class="scroll_section">
-                <p class="actions" onclick="show_hide_values(3)">LEARN MORE</p>
-                <img src="./src/Vector.png" alt="" class="scroll actions" onclick="show_hide_values(1)">
+                <p class="actions" onclick="animateCube_third_screen(3)">LEARN MORE</p>
+                <img src="./src/Vector.png" alt="" class="scroll actions" onclick="animateCube_third_screen(1)">
             </div>
             <div class="cube_top">
-                <img src="./src/triangle.png" alt="" class="triangle actions" onclick="show_hide_values(1)">
+                <model-viewer onclick="animateCube_third_screen(1)" class="model_viewer model_viewer_third" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="./models/eye/samurai_mask.glb" environment-image=""
+                    poster="" shadow-intensity="1" touch-action="pan-y"></model-viewer>
             </div>
         </div>
 
@@ -66,7 +69,7 @@
     <div class="apprearing_message">
         <div class="first_content_column" id="first_content_column">
             <div class="btn_top">
-                <p class="btn_back"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <p class="btn_back" onclick="hideCude()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M9 14l-4 -4l4 -4" />
                     <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
@@ -87,10 +90,17 @@
             </div>
         </div>
         <div class="second_content_column" id="second_content_column">
+            <div class="btn_top">
+                <p class="btn_back" onclick="hideCude_second_screen()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 14l-4 -4l4 -4" />
+                    <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+                  </svg>Back</p>
+            </div>
             <div class="flex_content">
-                <div class="column">
+                <div class="column cube_object_placeholder_second">
 
-                    <img src="./src/glossy-spheres-isolated-png 1.png" alt="" class="big_cube">
+                    <!-- <img src="./src/glossy-spheres-isolated-png 1.png" alt="" class="big_cube"> -->
                 </div>
                 <div class="column">
                     <p class="subtitle">PROFESSIONAL CATEGORY
@@ -103,9 +113,16 @@
             </div>
         </div>
         <div class="third_content_columnn" id="third_content_columnn">
+            <div class="btn_top">
+                <p class="btn_back" onclick="hideCude_third_screen()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 14l-4 -4l4 -4" />
+                    <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+                  </svg>Back</p>
+            </div>
             <div class="flex_content">
-                <div class="column">
-                    <img src="./src/triangle.png" alt="" class="big_cube">
+                <div class="column cube_object_placeholder_third">
+                    <!-- <img src="./src/triangle.png" alt="" class="big_cube"> -->
                 </div>
                 <div class="column">
                     <p class="subtitle">MORE ENTRIES
@@ -137,5 +154,11 @@
 <script src="./hero_section_scroll.js"></script>
 <!-- <script src="./"></script> -->
 <script src="./3danimations.js"></script>
+<script src="./animate_second_screen.js"></script>
+<script src="./animate_third_screen.js"></script>
+<script>
+    // set initial screen
+    localStorage.setItem('screen', 1);
+</script>
 
 </html>

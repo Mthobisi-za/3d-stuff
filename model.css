@@ -1,6 +1,7 @@
 .model_view {
     position: relative;
     margin-top: -60vh;
+    /* z-index: 10; */
 }
 
 model-viewer {
@@ -9,6 +10,7 @@ model-viewer {
     margin: auto;
     position: relative;
     /* margin-top: -60vh; */
+    /* z-index: 11; */
 }
 
 .content {

@@ -41,6 +41,9 @@ img {
 
 .scroll_section {
     text-align: center;
+    position: relative;
+    z-index: 11;
+    margin-top: -60px;
 }
 
 p {
@@ -62,6 +65,7 @@ p {
     overflow: scroll;
     height: 90vh;
     width: 100%;
+    margin-top: -50px;
 }
 
 .section {
@@ -115,7 +119,7 @@ p {
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .column {
@@ -192,5 +196,9 @@ p {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.actions {
     cursor: pointer;
 }
